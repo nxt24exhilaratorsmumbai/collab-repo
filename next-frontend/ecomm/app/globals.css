@@ -1,0 +1,67 @@
+:root {
+  --background: #E6E6E6;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background) !important;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.search-input::before {
+  content: \F52A;
+  font-family: "font-awesome-free";
+  font-weight: 600;
+}
+
+.text-gold {
+  color: #AB8E6E !important
+}
+
+.btn-gold {
+  background-color: #AB8E6E !important;
+  color: #FFFFFF !important;
+}
+
+.carousel-inner {
+  height: 400px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
